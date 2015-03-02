@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_module_block_info() {
+  $blocks = array();
+
+  $blocks['foo'] = array(
+    'info' => t('Custom module: Foo'),
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+
+//  hook_block_info_item
+
+  return $blocks;
+}
+
+// hook_block_configure
+
+// hook_block_save
+
+/**
+ * Implements hook_block_view().
+ */
+function custom_module_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'foo':
+      $block['subject'] = t('foo');
+      $block['content'] = array(
+        '#markup' => '<div>' . bar . '</div>',
+      );
+    break;
+
+    //hook_block_view_item
+
+  }
+
+  return $block;
+}

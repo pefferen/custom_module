@@ -1,0 +1,4 @@
+name = Custom module
+description = Lorem ipsum
+package = Custom
+core = 7.x
