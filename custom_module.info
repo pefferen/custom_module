@@ -2,8 +2,9 @@ name = Custom module
 description = Lorem ipsum
 package = Custom
 core = 7.x
-version = "7.x-1.2"
+version = "7.x-1.3"
+project status url = http://drupal.fserver.dev/fserver
 
 project = "custom_module"
-datestamp = "1425307870"
+datestamp = "1425311470"
 
