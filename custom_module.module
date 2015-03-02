@@ -30,7 +30,7 @@ function custom_module_block_view($delta = '') {
     case 'foo':
       $block['subject'] = t('foo');
       $block['content'] = array(
-        '#markup' => '<div>' . bar . '</div>',
+        '#markup' => '<div>' . bar! . '</div>',
       );
     break;
 

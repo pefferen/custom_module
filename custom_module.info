@@ -2,3 +2,4 @@ name = Custom module
 description = Lorem ipsum
 package = Custom
 core = 7.x
+version = "7.x-1.1"
